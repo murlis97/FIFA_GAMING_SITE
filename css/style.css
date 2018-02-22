@@ -136,22 +136,6 @@ img{
   margin-bottom:40px;
 }
 
-/* SERVICES */
-.services ul li{
-  list-style:none;
-  padding:10px;
-}
-
-.services ul li:nth-child(odd){
-  background:#333;
-  color:#fff;
-}
-
-.services ul li:nth-child(even){
-  background:#65f442;
-  color:#fff;
-}
-
 /* CONTACT */
 .contact form{
   background:#333;
@@ -182,15 +166,24 @@ img{
   text-transform:uppercase;
 }
 
-/* MEDIA QUERIES */
-@media(max-width:800px){
-  #showcase h1{
-    font-size:30px;
-  }
+.box:nth-child(even) {
+  background-color: #65f442;
+  color: #000;
 }
 
-@media(max-width:500px){
-  #showcase .showcase-content{
-    padding:40px 10px;
-  }
+.box:nth-child(odd) {
+  background-color: #42adf4;
+  color: #000;
+}
+
+.wrapper {
+  width: 100%;
+  display: grid;
+  grid-gap: 2%;
+  grid-template-columns: repeat(6, 10%);
+  border:1px solid #65f442;
+}
+
+.with-height {
+  height: 500px;
 }
